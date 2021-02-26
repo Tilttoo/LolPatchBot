@@ -1,0 +1,13 @@
+{
+  "name": "DiscordBOT",
+  "version": "1.0.0",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "discord.js": "^12.5.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}
