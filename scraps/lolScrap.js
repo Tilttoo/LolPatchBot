@@ -3,11 +3,7 @@ const axios = require("axios").default;
 
 const fethHtml = async url => {
     try {
-        const { data } = await axios.get(url, {
-            headers: {
-                Cookie: "firestorm_session=takn7uft7qga37lh813b6a9c3thmnoek;registered=1;points_value_pixel=0;firestorm_sso=%7B%22token%22%3A%2278a22a5e251300dfce45fb66892195fa85b6d30e%22%2C%22mail%22%3A%22firestormtilttoo%40gmail.com%22%7D;points_value_check=12;user_lang=en;csrf_cookie_name=22c44a7d606bea7183133be9a93d5a7c;__cfduid=dcaa4b6a39b5c70cc91b1e1cf7d40d5cf1610966251"
-            }
-        });
+        const { data } = await axios.get(url);
         return data;
     } catch {
         console.error(`ERROR: An error occurred while trying to fetch the URL: ${url}`);
